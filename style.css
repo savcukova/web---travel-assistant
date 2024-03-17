@@ -1,62 +1,100 @@
 :root {
-    --primary-color: #362d27;
-
+    --primary-color: #33292a;
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.center {
+    margin: 0 auto;
+    width: 80%;
 }
 
 /* NAVIGACE */
-.nav-container {
+nav {
     background-color: var(--primary-color);
+    font-weight: bold;
+    height: 40px;
 }
 
-.nav-container ul {
-    width: 100%; 
-    padding: 20x auto;
+nav ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    font-size: 16px;
+    height: auto;
 }
 
-.nav-container a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    flex-direction: row;
+    margin: 8px;
 }
 
-.nav-container li {
-    list-style: none;
-    padding: 10px;
-}
-
-.icon-menu {
+.menu {
     display: none;
-    width: 30px;
     height: 35px;
+    width: 30px;
     margin-left: auto;
-    margin-right: 5px;
-    padding: 5px;
+    padding: 7px;
 }
 
-.icon-menu img {
-    width: 100%;
+.menu img {
     height: 100%;
+    width: 100%;
 }
 
-@media (max-width: 720px) {
-    .icon-menu {
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .menu {
         display: block;
     }
+}
 
-    .nav-container ul {
-        display: none;
+/* TEXT S OBRAZKEM V POZADÍ */
+.hero-container {
+    background-image: url(./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+.hero-text {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    bottom: 38px;
+    right: 30px;
+    font-size: 60px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
     }
 }
