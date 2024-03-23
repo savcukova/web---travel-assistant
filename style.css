@@ -218,6 +218,19 @@ img {
     margin: 10px;
 }
 
+.button-wrapper span {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button-wrapper span:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid white;
+}
+
 @media (max-width: 768px) {
     .text-wrapper {
         flex-direction: column;
