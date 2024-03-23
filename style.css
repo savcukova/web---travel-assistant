@@ -301,3 +301,25 @@ img {
         width: 100%;
     }
 }
+
+/* FOOTER */
+.contacts {
+    background-color: var(--primary-color);
+    height: 10vh;
+}
+
+.cont-container {
+    text-align: center;
+}
+
+.cont-container a {
+    display: inline-block;
+    color: #be8046;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.cont-container div {
+    color: white;
+    font-size: 10px;
+}
