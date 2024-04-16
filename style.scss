@@ -277,3 +277,21 @@ nav {
         }
     }
 }
+
+// PICTURES //
+.imgs {
+    @include flex($justify: space-between, $align: space-between);
+
+    .img-container {
+        width: 50%;
+
+        @media (max-width: $md-screen) {
+            width: 100%;
+        }
+
+        img {
+            @include img_in_container;
+            object-fit: cover;
+        }
+    }
+}

@@ -304,4 +304,26 @@ nav .menu img {
 }
 .reviews-center .reviews-container .name {
   font-weight: bold;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+.imgs .img-container {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .imgs .img-container {
+    width: 100%;
+  }
+}
+.imgs .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
