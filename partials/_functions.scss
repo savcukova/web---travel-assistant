@@ -1,0 +1,7 @@
+@function decrease-size($size){
+    @return $size - 10;
+}
+
+@function bigger-text($size){
+    @return $size + 5;
+}
