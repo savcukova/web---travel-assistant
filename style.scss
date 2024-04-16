@@ -237,3 +237,43 @@ nav {
         }
     }
 }
+
+// REVIEWS //
+.reviews-center {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include flex($direction: column);
+    gap: 30px;
+
+    .review-about {
+        width: 50%;
+        text-align: center;
+    }
+
+    .reviews-container {
+        @include flex;
+        gap: 20px;
+
+        @media (max-width: $md-screen) {
+            @include flex($direction: column)
+        }
+
+        .rev {
+            text-align: center;
+
+            .rev-pic {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: 20px;
+                }
+            }
+        }
+
+        .name {
+            font-weight: bold;
+        }
+    }
+}

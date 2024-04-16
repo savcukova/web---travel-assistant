@@ -258,4 +258,50 @@ nav .menu img {
   background-color: #33292a;
   color: white;
   border: 1px solid white;
+}
+
+.reviews-center {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.reviews-center .review-about {
+  width: 50%;
+  text-align: center;
+}
+.reviews-center .reviews-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .reviews-center .reviews-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.reviews-center .reviews-container .rev {
+  text-align: center;
+}
+.reviews-center .reviews-container .rev .rev-pic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px;
+}
+.reviews-center .reviews-container .name {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
