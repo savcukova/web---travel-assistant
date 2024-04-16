@@ -192,3 +192,48 @@ nav {
         }
     }
 }
+
+// WHERE TO GO //
+.where-to-go {
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .where-center {
+        @include flex($direction: column);
+        gap: 20px;
+
+        .text-wrapper {
+            @include flex;
+            gap: 10px;
+
+            @media (max-width: $md-screen) {
+                @include flex($direction: column);
+            }
+
+            .title {
+                flex: 1;
+            }
+
+            .text {
+                flex: 1;
+                margin: 10px;
+            }
+        }
+
+        .button-wrapper {
+            background-color: $secondary-color;
+            color: $primary-color;
+            padding: 10px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $secondary-color;
+                border: 1px solid white;
+            }
+        }
+    }
+}

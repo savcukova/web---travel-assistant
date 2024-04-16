@@ -207,4 +207,55 @@ nav .menu img {
 .trips .trips-center .img img {
   max-width: 100%;
   height: auto;
+}
+
+.where-to-go {
+  background-color: #33292a;
+  color: white;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.where-to-go .where-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.where-to-go .where-center .text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .where-to-go .where-center .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.where-to-go .where-center .text-wrapper .title {
+  flex: 1;
+}
+.where-to-go .where-center .text-wrapper .text {
+  flex: 1;
+  margin: 10px;
+}
+.where-to-go .where-center .button-wrapper {
+  background-color: white;
+  color: #33292a;
+  padding: 10px;
+  border-radius: 8px;
+}
+.where-to-go .where-center .button-wrapper:hover {
+  background-color: #33292a;
+  color: white;
+  border: 1px solid white;
 }/*# sourceMappingURL=style.css.map */
