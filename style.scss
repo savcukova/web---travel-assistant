@@ -169,23 +169,26 @@ nav {
 // OUR TRIPS //
 .trips {
     margin: 40px;
-}
 
-.trips-center {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.img1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #d3cdc547;
-}
-
-@media (max-width: 768px) {
     .trips-center {
-        grid-template-columns: repeat(1, 1fr);
+        @include grid($columns: 3);
+
+        @media (max-width: $md-screen) {
+            @include grid($columns: 1);
+        }
+
+        .img1 {
+            @include flex($justify: center, $align: center);
+            background-color: $third-color;
+        }
+
+        .img {
+            @include flex-center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 }

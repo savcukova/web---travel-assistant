@@ -180,22 +180,31 @@ nav .menu img {
 .trips {
   margin: 40px;
 }
-
-.trips-center {
+.trips .trips-center {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.img1 {
+@media (max-width: 768px) {
+  .trips .trips-center {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.trips .trips-center .img1 {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: rgba(211, 205, 197, 0.2784313725);
 }
-
-@media (max-width: 768px) {
-  .trips-center {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.trips .trips-center .img {
+  display: flex;
+  justify-content: center;
+}
+.trips .trips-center .img img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
