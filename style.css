@@ -326,4 +326,22 @@ nav .menu img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.contacts {
+  background-color: #33292a;
+  height: 10vh;
+}
+.contacts .cont-container {
+  text-align: center;
+}
+.contacts .cont-container a {
+  display: inline-block;
+  color: rgba(211, 205, 197, 0.2784313725);
+  margin: 10px;
+  font-size: 12px;
+}
+.contacts .cont-container div {
+  color: white;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

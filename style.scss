@@ -295,3 +295,25 @@ nav {
         }
     }
 }
+
+// FOOTER //
+.contacts {
+    background-color: $primary-color;
+    height: 10vh;
+
+    .cont-container {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            color: $third-color;
+            margin: 10px;
+            font-size: 12px;
+        }
+
+        div {
+            color: $secondary-color;
+            font-size: 10px;
+        }
+    }
+}
